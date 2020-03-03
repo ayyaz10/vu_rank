@@ -1,0 +1,687 @@
+*{
+    font-size: 62.5%;
+    font-family: Proxima Nova;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+/* globel styles */
+
+a {
+    text-decoration: none;
+    color: #0E4977;
+}
+
+a:hover {
+    color: #984B25;
+}
+
+li {
+    list-style: none;
+}
+
+/* header styles */
+
+.feature-img-container {
+    height: 100vh;
+    background-image: url(images/feature-img.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*background-attachment: fixed;*/
+}
+
+/*nav*/
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.logo-plus-nav-container{
+    position: relative;
+    top: 60px;
+    max-width: 90%;
+    margin: 0px auto;
+    background: #fff;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 5px rgba(0,0,0, .2);
+    /* overflow: hidden; */
+}
+
+.logo {
+    height: 60px;
+    line-height: 60px;
+    padding: 15px 20px;
+    float: left;
+}
+
+.main-ul {
+    float: right;
+    white-space: nowrap;
+    padding-right: 20px;
+}
+.main-ul li  {
+  float: left;
+  /* margin: 10px 0; */
+  /* padding: 20px 20px; */
+}
+
+
+nav #icon {
+  color: #07274E;
+  font-size: 4rem;
+  line-height: 80px;
+  float: right;
+  display: none;
+  margin-right: 40px;
+  cursor: pointer;
+}
+.main-ul>li>a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #07274E;
+    padding: 30px 16px;
+    text-transform: uppercase;
+}
+
+.main-ul li a:hover {
+    color: #4788BA;
+    transition: all 0.5s;
+}
+.fas {
+  font-family: fontAwesome;
+}
+
+
+.drop-down {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 79px;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content>li {
+  width: 100%;
+}
+.dropdown-content>li>a {
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 20px;
+}
+.drop-down:hover .dropdown-content {
+  display: block;
+}
+
+/* featured-text */
+
+.featured-text{
+    position: relative;
+    top: 140px;
+    max-width: 650px;
+    background-color: rgba(4, 14, 39, 0.66);
+    color: #fff;
+    font-size: 2.6rem;
+    font-weight: 400;
+    margin: auto;
+    padding: 24px 40px;
+    line-height: 45px;
+    text-align: justify;
+    letter-spacing: 0.09rem;
+    word-spacing: -0.1rem;
+}
+
+/* section styles */
+.services-section {
+    padding: 35px 0px 0px 0px;
+    background-color: #f5f9fe;
+}
+.services-section .services-heading{
+    font-size: 2.2rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    /* color: #913B18; */
+}
+
+.services {
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    -webkit-box-pack: space-around;
+    -ms-flex-pack: space-around;
+    justify-content: space-around;
+    align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin: 30px auto;
+    padding-bottom: 21px;
+}
+
+.services h2 {
+    font-size: 2rem;
+     color: #0E1D43;
+}
+
+.service {
+    text-align: center;
+    width: 20%;
+    letter-spacing: 0.02rem;
+    word-spacing: -0.01rem;
+}
+
+.service p {
+    font-weight: 400;
+    margin-top: 15px;
+    letter-spacing: 0.04rem;
+    word-spacing: 0.02rem;
+    text-align: center;
+    font-size: 1.6rem;
+}
+.services button {
+    font-size: 1.9rem;
+    margin-top: 15px;
+    font-weight: bold;
+    letter-spacing: 0.04rem;
+    word-spacing: -0.001rem;
+    border: 0px;
+    background: #F5F9FE;
+    color: #913B18;
+}
+
+
+/* upload styles */
+
+.upload-section{
+    max-width: 100%;
+    /* height: 290px; */
+    padding: 60px 0px 60px 0px;
+    background-color: #050F27;
+    color: #ffffff;
+}
+
+.upload-section h2{
+    padding: 0px 0px 26px 0px;
+    font-size: 2.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.02rem;
+    font-weight: 400;
+        text-align: center;
+}
+
+.upload-section p {
+    font-size: 1.6rem;
+    font-weight: 200;
+    word-wrap: break-word;
+    margin: 0px auto;
+    padding-bottom: 30px;
+    width: 40%;
+    letter-spacing: 0.03rem;
+    text-align: center;
+}
+
+.upload-section .upload-button {
+    font-size: 1.3rem;
+    width: 8.3rem;
+    height: 3.2rem;
+    background-color: #0181F5;
+    border: 0px;
+    border-radius: 3px;
+    color: #ffffff;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.upload-section>.upload-button:hover {
+    background-color: #005EB4;
+}
+
+/* footer section */
+
+.flex-display {
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-around;
+    -ms-flex-pack: space-aroundy;
+    justify-content: space-around;
+    /* height: 224px; */
+        padding: 50px 0px 45px 0px;
+    background-color: #f5f9fe;
+
+}
+
+.footer-services-container h3, .footer-contact-container h3, .follow-us-section h3, .android-app-section h3 {
+    font-size: 1.9rem;
+    font-weight: 600;
+    letter-spacing: 0.06rem;
+    color: #050F27;
+    text-transform: uppercase;
+}
+
+.footer-nav-1 ul:first-child, .footer-nav-2 ul:first-child {
+    margin-top:6px;
+}
+
+.footer-nav-1 a, .footer-nav-2 a {
+    display: inline-block;
+    color: #050F27;
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 0.03rem;
+    text-transform: uppercase;
+    padding: 4px 0px 4px 15px;
+}
+
+.footer-nav-1 a:hover, .footer-nav-2 a:hover {
+    color: #0181F5;
+}
+
+.follow-us-section .social-icon-section {
+    padding: 10px 0px 10px 15px;
+}
+
+.follow-us-section {
+    margin-left: 10px;
+}
+
+
+.social-icon-section a img {
+    width: 28px;
+    height: 28px;
+    margin-left: 5px;
+}
+
+
+.android-app-section img {
+    width: 138px;
+    height: 50px;
+    margin-left: 60px;
+}
+
+.footer-all-rights {
+    background-color: #040E27;
+    padding: 12px 0px;
+}
+
+.footer-all-rights p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 0.06rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* responsive */
+
+@media (max-width: 1210px) {
+  .logo {
+    height: 40px;
+    line-height: 40px;
+  }
+
+  .main-ul li a {
+    font-size: 1.5rem;
+  }
+
+  .dropdown-content {
+    top: 78px;
+  }
+
+}
+
+
+@media (max-width: 1140px) {
+  .main-ul>li>a  {
+    padding: 30px 10px;
+  }
+/* services section */
+  .services-section {
+      padding: 35px 0px 0px 0px;
+      background-color: #F5F9FE;
+  }
+
+
+  .services {
+    margin: 20px auto;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+  }
+
+  .service{
+      text-align: center;
+      width: 25%;
+      /* border: 1px solid green; */
+    }
+  /* .service-1 {
+    flex-basis: 3%;
+  } */
+}
+
+@media (max-width: 1072px) {
+  .main-ul>li>a  {
+    padding: 30px 10px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .main-ul>li>a  {
+    padding: 30px 8px;
+  }
+}
+
+
+@media (max-width: 990px) {
+  nav #icon {
+    display: block;
+    height: 100%
+  }
+/* Firefox */ /* Internet Explorer 10+ */ /* respectively */
+  nav .main-ul{
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding-right: 0;
+}
+ /* only chrome */
+  nav .main-ul::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+  nav .main-ul {
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 70vh;
+    overflow: scroll;
+    background: #fff;
+    top: 80px;
+    text-align: center  ;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    z-index: 999;
+  }
+  .main-ul>li {
+    display: block;
+    float: none;
+    border-bottom: 1px solid  rgba(0,0,0, 0.4);
+    line-height: 1.8rem;
+  }
+  .main-ul li>a {
+    font-size: 1.8rem;
+  }
+
+  ..main-ul a.active, .main-ul a:hover {
+    border: none;
+    color: #FFF;
+  }
+  .logo {
+    padding-left: 20em;
+  }
+/* scroll fix for body */
+  .body-scroll-fix {
+    height: 100%;
+    overflow: hidden;
+    /* z-index: -1; */
+  }
+  .main-ul.show {
+    display: block;
+  }
+  .dropdown-content li>a {
+    font-size: 1.3rem;
+    padding: 11px;
+  }
+  .dropdown-content {
+    top: 40px;
+    left: 384px;
+  }
+  /* featured text */
+  .featured-text{
+    max-width: 650px;
+    font-size: 2.4rem;
+      padding: 20px 36px;
+  }
+
+@media (max-width: 800px) {
+
+  .logo-plus-nav-container {
+      height: 70px;
+    }
+    nav .main-ul {
+        top: 70px;
+    }
+    .logo{
+      padding: 10px 10px;
+    }
+      nav #icon {
+        margin-top: -7px;
+      }
+
+  .feature-img-container {
+    height: 90vh;
+    width: 100%;
+  }
+
+  .featured-text{
+    top: 93px;
+    max-width: 520px;
+    font-size: 1.8rem;
+      padding: 14px 30px;
+  }
+  .services-section {
+        padding: 30px 0px 0px 0px;
+  }
+  /* 050F27 */
+  .services {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+      margin-top: 20px;
+  }
+
+  .services h2 {
+      font-size: 2rem;
+  }
+  .service{
+      min-width: 60%;
+  }
+  .service p {
+    font-size: 1.8rem;
+  }
+
+  .services button {
+    padding: 0px 0 20px 0;
+  }
+
+  /* upload styles */
+  .upload-section{
+      padding: 40px 0px 30px 0px;
+  }
+  .upload-section h2 {
+      padding-bottom: 18px;
+      font-size: 2rem;
+      font-weight: 400;
+  }
+
+.upload-section p {
+      font-size: 1.6rem;
+      font-weight: 400;
+      width: 60%;
+      padding-bottom: 20px;
+}
+
+.upload-section .upload-button {
+    font-size: 1.4rem;
+    width: 8.6rem;
+    height: 3.4rem;
+  }
+}
+
+@media (max-width: 680px) {
+  .flex-display {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+            -ms-flex-wrap: nowrap;
+                flex-wrap: nowrap;
+    text-align: center;
+    height: 440px;
+    padding: 0px 0px 30px 0px;
+  }
+
+  .footer-services-container{
+    margin-left: -10px;
+  }
+
+    .footer-services-container h3{
+      margin-left: 15px;
+      margin-bottom: -2px;
+    }
+
+  .footer-services-container h3, .footer-contact-container h3, .follow-us-section h3, .android-app-section h3 {
+      font-size: 1.8rem;
+      font-weight: 800;
+      padding: 30px 0px 10px 0px;
+  }
+
+  .footer-nav-1 a, .footer-nav-2 a {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #0E4977;
+  }
+
+  .footer-services-container {
+    font-weight: bold;
+  }
+
+  .footer-contact-container {
+    display: none;
+  }
+
+  .follow-us-section {
+    margin-left: 0;
+    width: 100%;
+  }
+
+    .social-icon-section{
+      margin: 0 20px 0 0;
+    }
+
+  .social-icon-section a img {
+      margin-left: 7px;
+  }
+
+  .android-app-section{
+      /* width: 100%; */
+  }
+  .android-app-section img {
+      width: 138px;
+      height: 50px;
+      margin-left: 0px;
+      margin-top: -6px;
+  }
+}
+
+@media (max-width: 610px) {
+  .logo-plus-nav-container{
+      top: 45px;
+  }
+  .featured-text{
+    max-width: 460px;
+  }
+}
+
+@media (max-width: 535px) {
+  .logo-plus-nav-container{
+      top: 40px;
+  }
+  .featured-text{
+    top: 80px;
+    max-width: 380px;
+    padding: 10px 25px;
+    font-size: 1.8rem;
+    text-align: ;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-plus-nav-container{
+      top: 30px;
+  }
+
+  .featured-text{
+    max-width: 320px;
+  }
+
+  /* upload styles */
+  .upload-section{
+      padding: 30px 20px 30px 20px;
+  }
+
+}
+
+@media only screen and (max-width: 500px) and (min-width: 320px)  {
+.services h2 {
+      font-size: 2.2rem;
+}
+.service p {
+  font-size: 2rem;
+}
+
+  .services-section .services-heading, .upload-section h2 {
+    font-size: 2.6rem;
+  }
+
+  .upload-section p {
+    width: 80%;
+    font-size: 2rem;
+    font-weight: 200;
+  }
+
+  .upload-section .upload-button {
+      width: 8.3rem;
+      height: 3rem;
+      font-size: 1.28rem;
+  }
+}
+
+@media (max-width: 400px) {
+  /* featured text */
+  .featured-text{
+    max-width: 280px;
+    letter-spacing: 0.022rem;
+  }
+
+
+}
+
+@media (min-width: 1400px){
+  .feature-img-container{
+    height: 60vh;
+  }
+}

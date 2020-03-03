@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="171 168 123 50">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Artboard_1);
+      }
+
+      .cls-2 {
+        fill: #05192a;
+        font-size: 26px;
+        font-family: Caudex;
+      }
+
+      .cls-3 {
+        fill: #4788ba;
+        font-size: 66px;
+        font-family: BroshK;
+      }
+    </style>
+    <clipPath id="clip-Artboard_1">
+      <rect x="171" y="168" width="123" height="50"/>
+    </clipPath>
+  </defs>
+  <g id="Artboard_1" data-name="Artboard – 1" class="cls-1">
+    <g id="Group_1" data-name="Group 1" transform="translate(21 113)">
+      <text id="rank" class="cls-2" transform="translate(244.069 84)"><tspan x="-27.549" y="0">rank</tspan></text>
+      <text id="VU" class="cls-3" transform="translate(184 98)"><tspan x="-30.096" y="0">VU</tspan></text>
+    </g>
+  </g>
+</svg>
