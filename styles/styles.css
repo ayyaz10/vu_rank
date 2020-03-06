@@ -28,7 +28,7 @@ li {
 
 .feature-img-container {
     height: 100vh;
-    background-image: url(images/feature-img.jpg);
+    background-image: url(../images/feature-img.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -222,7 +222,7 @@ nav #icon {
     text-transform: uppercase;
     letter-spacing: 0.02rem;
     font-weight: 400;
-        text-align: center;
+    text-align: center;
 }
 
 .upload-section p {
@@ -246,6 +246,7 @@ nav #icon {
     color: #ffffff;
     display: block;
     margin: 0 auto;
+    letter-spacing: 0.1rem;
     cursor: pointer;
 }
 
